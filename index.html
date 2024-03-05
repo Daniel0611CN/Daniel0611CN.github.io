@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -18,8 +22,15 @@
     <!--HEADER-->
     <header>
       <a href="index.html" class="logo_wrapper">
-        <img src="images/logo_cedago.png"
+        <img src="images/header_imagen.webp"
       /></a>
+
+      <input type="checkbox" id="menu-check" />
+      <label id="menu" for="menu-check">
+        <span id="menu-abrir">&#9776;</span>
+        <span id="menu-cerrar">X</span>
+      </label>
+
       <!--NAV-->
       <nav>
         <ul>
@@ -44,14 +55,17 @@
     <!--MAIN-->
     <main>
       <section class="section_1">
-        <h1>La Revolución en la seguridad</h1>
-        <p>Mantén tus datos a salvo con nuestros servicios</p>
+        <article>
+          <h1>La Revolución en la <span>seguridad</span></h1>
+          <p>
+            La ciberseguridad no es una cuestión de perfección, sino de gestión
+            de riesgos
+          </p>
+        </article>
+        <img class="section_1_img" src="images/section1_imagen.webp" alt="" />
       </section>
       <section class="section_2">
-        <h3>
-          La ciberseguridad no es una cuestión de perfección, sino de gestión de
-          riesgos
-        </h3>
+        <h3>Programas</h3>
         <article class="section_1_2">
           <p class="texto_1">Mantén tus datos en la nube</p>
           <p class="texto_1_2">
@@ -80,104 +94,45 @@
         </article>
       </section>
       <section class="section_3">
-        <h3>Servicios</h3>
-        <div class="section_3_1" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.nucleorojo.com/">
-                <section id="img_s1">
-                  <img src="images/servicios_imagen_1.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="section_3_2" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.entelgy.com/">
-                <section id="img_s2">
-                  <img src="images/servicios_imagen_2.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="section_3_3" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.iriusrisk.com/">
-                <section id="img_s3">
-                  <img src="images/servicios_imagen_3.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="section_3_4" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.electronicid.eu">
-                <section id="img_s4">
-                  <img src="images/servicios_imagen_4.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="section_3_5" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.tarlogic.com/es/">
-                <section id="img_s5">
-                  <img src="images/servicios_imagen_5.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="section_3_6" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.eset.com/es/">
-                <section id="img_s6">
-                  <img src="images/servicios_imagen_6.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="section_3_7" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.wezengroup.com/">
-                <section id="img_s7">
-                  <img src="images/servicios_imagen_7.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="section_3_8" data-tilt>
-          <ul>
-            <li>
-              <a href="https://www.incibe.es/">
-                <section id="img_s8">
-                  <img src="images/servicios_imagen_8.png" />
-                </section>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h3 class="texto_h3_1">
+          Mantén tus datos a salvo con nuestros servicios
+        </h3>
+        <h3 class="texto_h3_2">Servicios</h3>
+        <section class="images">
+          <a class="section_3_1" href="https://www.nucleorojo.com/">
+            <img class="section_3_1_img" src="images/servicios_imagen_1.webp" />
+          </a>
+          <a class="section_3_1" href="https://www.electronicid.eu">
+            <img class="section_3_2_img" src="images/servicios_imagen_2.webp" />
+          </a>
+          <a class="section_3_1" href="https://www.wezengroup.com/">
+            <img class="section_3_2_img" src="images/servicios_imagen_3.webp" />
+          </a>
+          <a class="section_3_1" href="https://www.incibe.es/">
+            <img class="section_3_1_img" src="images/servicios_imagen_4.webp" />
+          </a>
+          <a class="section_3_5" href="https://www.tarlogic.com/es/">
+            <img class="section_3_5_img" src="images/servicios_imagen_5.webp" />
+          </a>
+          <a class="section_3_6" href="https://www.eset.com/es/">
+            <img class="section_3_2_img" src="images/servicios_imagen_6.webp" />
+          </a>
+          <a class="section_3_7" href="https://www.iriusrisk.com/">
+            <img class="section_3_7_img" src="images/servicios_imagen_7.webp" />
+          </a>
+          <a class="section_3_8" href="https://www.entelgy.com/">
+            <img class="section_3_7_img" src="images/servicios_imagen_8.webp" />
+          </a>
+        </section>
       </section>
     </main>
     <!--FOOTER-->
     <footer>
       <section>
-        <p>CEDAGO cedago.11@gmail.com C/Antonio García Moreno, 5</p>
+        <a>Términos y Condiciones</a>
       </section>
       <div>
-        <img src="images/footer_imagen_1.png" class="footer_imagen_1" />
+        <img src="images/footer_imagen_1.webp" class="footer_imagen_1" />
       </div>
       <a rel="stylesheet" href="HTML/Redes.html">
         <button id="Redes">
@@ -203,6 +158,6 @@
         </button>
       </a>
     </footer>
-    <script src="vanilla-tilt.js"></script>
+    <script src="header_animation.js"></script>
   </body>
 </html>
