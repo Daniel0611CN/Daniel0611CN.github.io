@@ -820,7 +820,7 @@ header div.contenedor nav {
     position: absolute;
     width: 375px;
     height: 500px;
-    margin-top: 45%;
+    margin-top: 25%;
     margin-right: 50%;
     transform: translate(50%, -50%);
     background: rgb(0, 52, 73);
