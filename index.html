@@ -24,13 +24,16 @@
       <a href="index.html" class="logo_wrapper">
         <img src="images/header_imagen.webp"
       /></a>
-
       <input type="checkbox" id="menu-check" />
       <label id="menu" for="menu-check">
-        <span id="menu-abrir">&#9776;</span>
-        <span id="menu-cerrar">X</span>
+        <div class="menu-hover">
+          <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+          </div>
+        </div>
       </label>
-
       <!--NAV-->
       <nav>
         <ul>
@@ -38,16 +41,21 @@
             <a class="link" href="index.html"> Inicio </a>
           </li>
           <li>
-            <a class="link" href="HTML/Servicios.html"> Servicios </a>
+            <a class="link" href="HTML/servicios.html"> Servicios </a>
           </li>
           <li>
-            <a class="link" href="HTML/Programas.html"> Programas </a>
+            <a class="link" href="HTML/programas.html"> Programas </a>
           </li>
           <li>
-            <a class="link" href="HTML/Registro.html"> Registro </a>
+            <a class="link" href="HTML/registro.html"> Registro </a>
           </li>
-          <li>
-            <a class="link" href="HTML/Perfil.html"> Perfil </a>
+          <li class="link-submenu">
+            <a class="link" href="HTML/perfil.html"> Perfil </a>
+            <ul class="submenu">
+              <li><a href="HTML/misprogramas.html">Mis Programas</a></li>
+              <li><a href="HTML/micuenta.html">Mi Cuenta</a></li>
+              <li><a href="HTML/notificaciones.html">Notificaciones</a></li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -65,33 +73,81 @@
         <img class="section_1_img" src="images/section1_imagen.webp" alt="" />
       </section>
       <section class="section_2">
+        <div class="nft">
+          <a href="https://www.sparta.eu/">
+            <div class="main">
+              <img
+                class="tokenImage"
+                id="imagen_token"
+                src="images/programas_imagen_1.png"
+              />
+              <h2>SPARTA</h2>
+              <p class="description">Cibersecurity programs</p>
+              <div class="tokenInfo">
+                <div class="price">
+                  <p>29.99 €</p>
+                </div>
+                <div class="duration">
+                  <ins>10 days left</ins>
+                </div>
+              </div>
+              <div class="creator">
+                <div class="wrapper">
+                  <img src="images/photo-1620121692029-d088224ddc74.avif" />
+                </div>
+                <ins>Made by T-Shark</ins>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="nft">
+          <a href="https://forescouttechnologies.es/">
+            <div class="main">
+              <img class="tokenImage" src="images/programas_imagen_2.png" />
+              <h2>ForeScout</h2>
+              <p class="description">Cibersecurity Programs</p>
+              <div class="tokenInfo">
+                <div class="price">
+                  <p>49.99 €</p>
+                </div>
+                <div class="duration">
+                  <p>20 days left</p>
+                </div>
+              </div>
+              <div class="creator">
+                <div class="wrapper">
+                  <img src="images/photo-1620121692029-d088224ddc74.avif" />
+                </div>
+                <ins>Made by ForeScout</ins>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="nft">
+          <a href="https://www.splunk.com/">
+            <div class="main">
+              <img class="tokenImage" src="images/programas_imagen_3.png" />
+              <h2>Splunk</h2>
+              <p class="description">Cibersecurity Programs</p>
+              <div class="tokenInfo">
+                <div class="price">
+                  <p>34.99 €</p>
+                </div>
+                <div class="duration">
+                  <ins></ins>
+                  <p>5 days left</p>
+                </div>
+              </div>
+              <div class="creator">
+                <div class="wrapper">
+                  <img src="images/photo-1620121692029-d088224ddc74.avif" />
+                </div>
+                <ins>Made by Splunk</ins>
+              </div>
+            </div>
+          </a>
+        </div>
         <h3>Programas</h3>
-        <article class="section_1_2">
-          <p class="texto_1">Mantén tus datos en la nube</p>
-          <p class="texto_1_2">
-            Identificamos amenazas, explotamos vulnerabilidades
-          </p>
-          <hr />
-        </article>
-        <article class="section_2_2">
-          <p class="texto_2">Desarrolla y diseña páginas webs</p>
-          <p class="texto_2_2">Con nuestros servicios Cloud</p>
-          <hr />
-        </article>
-        <article class="section_3_2_1">
-          <p class="texto_3">Navega más rápido</p>
-          <p class="texto_3_2">
-            Vigilamos y controlamos en todo momento las amenazas
-          </p>
-          <hr />
-        </article>
-        <article class="section_4_2">
-          <p class="texto_4">Instala programas sin riesgo</p>
-          <p class="texto_4_2">
-            Te avisaremos si el programa puede dañar el equipo
-          </p>
-          <hr />
-        </article>
       </section>
       <section class="section_3">
         <h3 class="texto_h3_1">
@@ -129,12 +185,12 @@
     <!--FOOTER-->
     <footer>
       <section>
-        <a>Términos y Condiciones</a>
+        <p>cedago@gmail.com, C. Antonio García Moreno, 5,</p>
       </section>
       <div>
         <img src="images/footer_imagen_1.webp" class="footer_imagen_1" />
       </div>
-      <a rel="stylesheet" href="HTML/Redes.html">
+      <a rel="stylesheet" href="HTML/redes.html">
         <button id="Redes">
           <p>Conócenos</p>
           <div class="div_1">
@@ -158,6 +214,7 @@
         </button>
       </a>
     </footer>
-    <script src="header_animation.js"></script>
+    <script src="JS/scroll_animation.js"></script>
+    <script src="JS/menu_animation.js"></script>
   </body>
 </html>
