@@ -758,7 +758,7 @@ header div.contenedor nav {
   }
   nav ul {
     position: absolute;
-    top: 100px;
+    top: -20px;
     right: 0;
     height: 1000px;
     width: 100%;
@@ -769,15 +769,42 @@ header div.contenedor nav {
     z-index: 20;
   }
   nav li {
-    position: relative;
-    top: -12%;
     padding: 20px;
-    bottom: 0px;
+    transition-duration: 0.5s;
   }
   nav li a {
+    top: 0px;
     font-size: 250%;
     font-weight: 600;
     padding-bottom: 2px;
+    padding: 0px;
+    transition-duration: 0.5s;
+  }
+}
+@media screen and (max-height: 750px) {
+  nav li a {
+    position: relative;
+    top: -100px;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.5s;
+  }
+  nav li {
+    padding: 10px;
+    transition-duration: 0.5s;
+  }
+}
+@media screen and (max-height: 550px) {
+  nav li a {
+    position: relative;
+    top: -250px;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.5s;
+  }
+  nav li {
+    padding: 3px;
+    transition-duration: 0.5s;
   }
 }
 
