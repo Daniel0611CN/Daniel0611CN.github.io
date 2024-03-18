@@ -638,7 +638,7 @@ footer button:hover .div_6 img {
   .section_2 {
     padding: 200px 0 100px 0;
     grid-template-columns: auto;
-    height: 2100px;
+    height: 1800px;
   }
 }
 
@@ -797,7 +797,7 @@ header div.contenedor nav {
   display: none;
   list-style: none;
   width: 200px;
-  height: 100px;
+  height: 155px;
   margin-left: -145px;
   margin-top: 0px;
   background: rgba(56, 197, 202, 0.301);
