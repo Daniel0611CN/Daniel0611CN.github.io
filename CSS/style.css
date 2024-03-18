@@ -104,7 +104,7 @@ nav a:hover:after {
 .section_1 {
   background-image: url(../images/section_1_fondo.webp);
   background-size: cover;
-  height: 130vh;
+  height: 1300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,7 @@ nav a:hover:after {
   font-size: 5rem;
   font-weight: 400;
   width: 800px;
-  margin: -225px 0 35px 0;
+  margin: -350px 0 35px 0;
 }
 .section_1 h1 span {
   background: white;
@@ -138,7 +138,7 @@ nav a:hover:after {
 .section_1 img {
   width: 550px;
   height: auto;
-  margin: -225px 0 0;
+  margin: -350px 0 0;
   filter: drop-shadow(2px 2px 15px #01ceef);
   transition-duration: 1s;
 }
@@ -150,7 +150,7 @@ nav a:hover:after {
 /*SECTION/(SECTION_2)*/
 .section_2 {
   background: linear-gradient(180deg, rgb(2, 12, 39), rgb(6, 5, 10));
-  height: 100vh;
+  height: 900px;
   padding: 200px 0 100px 0;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -286,7 +286,7 @@ code {
 .section_3 {
   background-image: url(../images/section_3_fondo.webp);
   background-size: cover;
-  height: 135vh;
+  height: 1300px;
 }
 .texto_h3_1 {
   text-align: left;
@@ -638,7 +638,7 @@ footer button:hover .div_6 img {
   .section_2 {
     padding: 200px 0 100px 0;
     grid-template-columns: auto;
-    height: 200vh;
+    height: 2100px;
   }
 }
 
@@ -657,8 +657,7 @@ footer button:hover .div_6 img {
     grid-template-columns: auto auto;
     width: 300px;
     margin-left: 12%;
-    align-items: center;
-    height: 48%;
+    height: 600px;
   }
   .images img {
     padding-top: 20px;
@@ -761,7 +760,7 @@ header div.contenedor nav {
     position: absolute;
     top: 100px;
     right: 0;
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     flex-direction: column;
     background: #010c26;
@@ -770,8 +769,8 @@ header div.contenedor nav {
     z-index: 20;
   }
   nav li {
-    padding-top: 35px;
-    padding-bottom: 65px;
+    padding-top: 20px;
+    padding-bottom: 55px;
   }
   nav li a {
     font-size: 250%;
@@ -798,7 +797,7 @@ header div.contenedor nav {
   display: none;
   list-style: none;
   width: 200px;
-  height: 160px;
+  height: 100px;
   margin-left: -145px;
   margin-top: 0px;
   background: rgba(56, 197, 202, 0.301);
@@ -819,8 +818,8 @@ header div.contenedor nav {
   .submenu {
     position: absolute;
     width: 375px;
-    height: 500px;
-    margin-top: 38.5%;
+    height: 420px;
+    margin-top: 90.5%;
     margin-right: 50%;
     transform: translate(50%, -50%);
     background: rgb(0, 52, 73);
