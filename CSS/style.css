@@ -769,8 +769,10 @@ header div.contenedor nav {
     z-index: 20;
   }
   nav li {
-    padding-top: 20px;
-    padding-bottom: 55px;
+    position: relative;
+    top: -12%;
+    padding: 20px;
+    bottom: 0px;
   }
   nav li a {
     font-size: 250%;
@@ -799,15 +801,12 @@ header div.contenedor nav {
   width: 200px;
   height: 155px;
   margin-left: -145px;
-  margin-top: 0px;
   background: rgba(56, 197, 202, 0.301);
   border: 1px solid #00ffff;
   border-radius: 8px;
 }
 .submenu a {
-  margin-top: 26.5px;
-  padding-bottom: 2px;
-  top: 50%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -818,15 +817,16 @@ header div.contenedor nav {
   .submenu {
     position: absolute;
     width: 375px;
-    height: 420px;
-    margin-top: 90.5%;
+    height: 350px;
+    margin-top: -200.5%;
     margin-right: 50%;
     transform: translate(50%, -50%);
     background: rgb(0, 52, 73);
     box-shadow: 0 0 120px #00ffff;
   }
   .submenu a {
-    top: 50%;
+    margin-top: 50px;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
