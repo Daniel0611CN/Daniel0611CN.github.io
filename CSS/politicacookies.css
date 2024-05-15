@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  /*If u use firefox, you can comment this line, 
+      if u use chrome, leave it the same.*/
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  background-image: url(https://montaketak.com/wp-content/uploads/2017/01/fondo-cta.jpg);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  height: 160px;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+header p {
+  color: white;
+}
+
+main {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section p {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+footer {
+  background-image: url(https://montaketak.com/wp-content/uploads/2017/01/fondo-cta.jpg);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+}
