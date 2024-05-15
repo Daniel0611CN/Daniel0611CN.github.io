@@ -16,6 +16,7 @@ document
       contrasena.trim() === ""
     ) {
       Swal.fire({
+        allowOutsideClick: false,
         title: "Error",
         text: "Por favor, complete todos los campos.",
         icon: "error",
@@ -28,6 +29,7 @@ document
       };
       const JsonRegistro = JSON.stringify(datosRegistro);
       Swal.fire({
+        allowOutsideClick: false,
         title: "Términos y condiciones",
         input: "checkbox",
         inputValue: 1,
@@ -42,6 +44,7 @@ document
         },
       }).then(() => {
         Swal.fire({
+          allowOutsideClick: false,
           title: "Bienvenido a Cedago",
           text: "¡Muchas gracias por registrarte!",
           icon: "success",
