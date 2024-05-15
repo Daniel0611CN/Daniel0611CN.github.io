@@ -2,13 +2,17 @@ document
   .getElementById("submit-button")
   .addEventListener("click", function values(event) {
     event.preventDefault();
+    const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const usuarioRegex = /^[a-zA-Z0-9_]{3,16}$/;
     const usuario = document.querySelector('input[name="usuario"]').value;
     const correo = document.querySelector('input[name="correo"]').value;
     const contrasena = document.querySelector('input[name="contrasena"]').value;
 
     if (
       usuario.trim() === "" ||
+      !usuarioRegex.test(usuario) ||
       correo.trim() === "" ||
+      !correoRegex.test(correo) ||
       contrasena.trim() === ""
     ) {
       Swal.fire({
