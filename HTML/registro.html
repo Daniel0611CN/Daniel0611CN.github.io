@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../CSS/registro.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--NAV-->
+      <nav>
+        <div>
+          <a class="a" href="../index.html"
+            ><img class="a2" src="../images/header_imagen.webp" alt=""
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+      <section class="registro">
+        <section class="form-login">
+          <h5>Registro</h5>
+          <input
+            class="controls"
+            id="nombre"
+            type="text"
+            name="usuario"
+            value=""
+            placeholder="Nombre"
+            required
+          />
+          <input
+            class="controls"
+            id="correo"
+            type="email"
+            name="correo"
+            value=""
+            placeholder="Correo Electrónico"
+            required
+          />
+          <div id="emailMessage"></div>
+          <input
+            id="password-input"
+            class="controls"
+            type="password"
+            name="contrasena"
+            value=""
+            placeholder="Contraseña"
+            required
+          />
+          <input
+            type="checkbox"
+            id="mostrar-password"
+            onchange="mostrarContrasena()"
+          />
+          <label for="mostrar-password" id="label"></label>
+          <input
+            id="password-input2"
+            class="controls"
+            type="password"
+            name="contrasena"
+            value=""
+            placeholder="Confirmar Contraseña"
+            required
+          />
+          <input
+            type="checkbox"
+            id="mostrar-password2"
+            onchange="mostrarContrasena2()"
+          />
+          <label for="mostrar-password2" id="label2"></label>
+          <div id="password-validation"></div>
+          <input
+            id="submit-button"
+            class="buttons"
+            type="submit"
+            name=""
+            value="Enviar"
+          />
+          <div class="div1">
+            <a class="enlace" href="iniciosesion.html">¿Ya estás Registrado?</a>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer></footer>
+
+    <script src="../JS/sweetAlert.js"></script>
+    <script src="../JS/passwordValidation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
