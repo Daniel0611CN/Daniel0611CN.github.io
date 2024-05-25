@@ -68,11 +68,18 @@ label {
   margin: -150px 175px;
 }
 .swal2-checkbox {
-  margin-top: 88px;
-  margin-left: 10px;
+  margin-top: 89px;
+  margin-left: 8px;
+  border-radius: 5px;
 }
-.swal2-popup {
-  height: auto;
+.swal2-icon.swal2-success .swal2-success-circular-line-left {
+  display: none;
+}
+.swal2-icon.swal2-success .swal2-success-circular-line-right {
+  display: none;
+}
+.swal2-icon.swal2-success .swal2-success-fix {
+  display: none;
 }
 input:focus {
   outline: solid;
