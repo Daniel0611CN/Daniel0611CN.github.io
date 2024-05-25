@@ -1,162 +1,78 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-html {
-  background-image: url(../images/photo-1620121692029-d088224ddc74.avif);
-}
-.registro {
-  margin-top: 150px;
-  padding: 120px;
-}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../CSS/iniciosesion.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--NAV-->
+      <nav>
+        <div>
+          <a class="a" href="../index.html"
+            ><img class="a2" src="../images/header_imagen.webp" alt=""
+          /></a>
+        </div>
+      </nav>
+    </header>
 
-.form-login {
-  width: 350px;
-  height: 280px;
-  background: #372292b4;
-  margin: 40px auto;
-  box-shadow: 2px 15px 35px #28079ebe;
-  padding: 30px 20px;
-  border-radius: 25px;
-  color: white;
-}
-.a {
-  position: absolute;
-  display: block;
-  text-align: center;
-  width: fit-content;
-  margin: -150px 175px;
-}
-.a2 {
-  width: 100px;
-  height: 100px;
-  transition-duration: 0.5s;
-}
-.a2:hover {
-  scale: 1.25;
-  filter: drop-shadow(1px 1px 2.5px #0004ff);
-}
-.form-login h5 {
-  margin: 0;
-  text-align: center;
-  height: 40px;
-  margin-bottom: 30px;
-  font-size: 25px;
-  color: white;
-}
-.controls {
-  width: 94.5%;
-  border: none;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  padding: 11px 10px;
-  background: rgba(248, 243, 243, 0.836);
-  font-size: 14px;
-  color: black;
-  font-weight: 500;
-}
-input:focus {
-  outline: solid;
-  outline-offset: 2px;
-  outline-width: 1px;
-  outline-color: aliceblue;
-}
-input:required {
-  background-color: rgba(240, 248, 255, 0.808);
-}
-input#submit-button:hover {
-  width: 80%;
-  margin-left: 35px;
-}
-#inputUsuario {
-  width: 94.5%;
-  border: none;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  padding: 11px 10px;
-  background: rgba(248, 243, 243, 0.836);
-  font-size: 14px;
-  color: black;
-  font-weight: 500;
-}
-#showPassword {
-  display: none;
-}
-.enlace {
-  display: block;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-label {
-  position: absolute;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/esconder.png");
-  background-size: cover;
-  margin-top: -50px;
-  margin-left: 300px;
-  cursor: pointer;
-}
-#showPassword:checked + label {
-  background-image: url("../images/foto.png");
-}
-.buttons {
-  display: inline;
-  width: 100%;
-  height: 40px;
-  background: #4a37b4;
-  border-radius: 23px;
-  border: 1px solid rgb(146, 157, 216);
-  color: white;
-  margin-bottom: 16px;
-  cursor: pointer;
-  transition-duration: 0.5s;
-}
-.buttons:hover {
-  background-color: rgba(30, 60, 158, 0.849);
-  border-radius: 13px;
-}
-.form-login p {
-  height: 40px;
-  text-align: center;
-}
+    <!--MAIN-->
+    <main>
+      <section class="registro">
+        <section class="form-login">
+          <form novalidate>
+            <h5>Inicio Sesión</h5>
+            <input
+              type="text"
+              name="usuario"
+              id="inputUsuario"
+              placeholder="Nombre"
+            />
+            <input
+              class="controls"
+              id="password-input"
+              type="password"
+              name="contrasena"
+              value=""
+              placeholder="Contraseña"
+            />
+            <input
+              type="checkbox"
+              id="showPassword"
+              onchange="mostrarContrasena()"
+            />
+            <label for="showPassword" id="label"></label>
+            <input
+              id="submit-button"
+              class="buttons"
+              type="submit"
+              name=""
+              value="Iniciar Sesión"
+            />
+            <div class="div1">
+              <a class="enlace" href="../HTML/registro.html"
+                >Volver a Registro</a
+              >
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
 
-.form-login a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  display: inline-block;
-  position: relative;
-  transition-duration: 0.35s;
-}
+    <!--FOOTER-->
+    <footer></footer>
 
-.form-login a:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -5px;
-  right: 0;
-  background-color: rgb(180, 182, 181);
-  border-radius: 25px;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
-}
-.form-login a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-.enlace {
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-.div1 {
-  text-align: center;
-  margin-top: 20px;
-}
+    <script src="../JS/showPassword.js"></script>
+    <script src="../JS/sweetAlertLogin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
