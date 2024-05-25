@@ -99,6 +99,24 @@ nav a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+#nombreUsuario {
+  display: block;
+  position: absolute;
+  left: 58%;
+  transition-duration: 1s;
+}
+@media screen and (max-width: 1720px) {
+  #nombreUsuario {
+    display: block;
+    left: 45%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #nombreUsuario {
+    display: block;
+    left: 32%;
+  }
+}
 
 /*SECTION/(SECTION_1)*/
 .section_1 {
@@ -427,6 +445,7 @@ footer section {
   block-size: 100px;
   inline-size: 125px;
   filter: drop-shadow(1px 1px 5px #03ecec);
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 .footer_imagen_1:hover {
