@@ -7,7 +7,6 @@ document
     const usuario = document.querySelector('input[name="usuario"]').value;
     const correo = document.querySelector('input[name="correo"]').value;
     const contrasena = document.querySelector('input[name="contrasena"]').value;
-
     if (
       usuario.trim() === "" ||
       !usuarioRegex.test(usuario) ||
@@ -18,7 +17,7 @@ document
       Swal.fire({
         allowOutsideClick: false,
         title: "Error",
-        text: "Por favor, complete todos los campos.",
+        text: "Por favor, complete todos los campos correctamente.",
         icon: "error",
       });
     } else {
@@ -42,6 +41,10 @@ document
         inputValidator: (result) => {
           return !result && "Debes estar de acuerdo con los términos";
         },
+        customClass: {
+          confirmButtonText: "styled-button",
+          cancelButtonText: "styled-button",
+        },
       }).then(() => {
         Swal.fire({
           allowOutsideClick: false,
@@ -51,6 +54,7 @@ document
           text: JsonRegistro,
         }).then((result) => {
           if (result.value) {
+            localStorage.setItem("usuario", usuario);
             window.location.href = "../inicio.html";
           }
         });
