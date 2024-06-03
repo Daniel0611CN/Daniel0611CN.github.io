@@ -21,6 +21,10 @@ document
         if (result.isConfirmed) {
           window.location.href = "../inicio.html";
         }
+        if (result.value) {
+            localStorage.setItem("usuario", usuario);
+            window.location.href = "../inicio.html";
+        }
       });
     }
   });
