@@ -201,3 +201,11 @@ input#submit-button:hover {
     margin-left: 200px;
   }
 }
+@media screen and (max-width: 650px) {
+  main {
+    margin-left: -105px;
+  }
+  .a {
+    margin-left: 145spx;
+  }
+}
