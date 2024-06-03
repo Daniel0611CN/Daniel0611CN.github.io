@@ -204,8 +204,10 @@ input#submit-button:hover {
 @media screen and (max-width: 650px) {
   main {
     margin-left: -105px;
+    margin-top: -80px;
   }
   .a {
-    margin-left: 145spx;
+    margin-left: 145px;
+    margin-top: -20px;
   }
 }
