@@ -1,5 +1,3 @@
-# Cedago - Cybersecurity Website
-
 <div style="text-align: center; color: #2c3e50;">
   <h1 style="font-size: 2.5em; margin: 0;">Cedago - Cybersecurity Services Website</h1>
   <p style="font-size: 1.2em; font-style: italic;">Author: Daniel Clavijo Núñez</p>
