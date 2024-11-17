@@ -7,7 +7,7 @@
 
 <p style="text-align: center; color: #3498db; font-size: 1.1em;">
   🔗 <a href="https://daniel0611CN.github.io" style="color: #3498db; text-decoration: none;">Visit the site on GitHub Pages</a> |
-  <a href="#" style="color: #3498db; text-decoration: none;">Visit on Vercel</a>
+  <a href="https://cedago.vercel.app" style="color: #3498db; text-decoration: none;">Visit on Vercel</a>
 </p>
 
 ## About Cedago
