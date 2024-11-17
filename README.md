@@ -1,121 +1,44 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cedago - Página de Ciberseguridad</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+# Cedago - Página de Ciberseguridad
 
-        .container {
-            max-width: 800px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+<div style="text-align: center; color: #2c3e50;">
+  <h1 style="font-size: 2.5em; margin: 0;">Cedago - Página Web Orientada a Servicios de Ciberseguridad</h1>
+  <p style="font-size: 1.2em; font-style: italic;">Autor: Daniel Clavijo Núñez</p>
+</div>
 
-        h1, h2 {
-            color: #2c3e50;
-            text-align: center;
-        }
+---
 
-        h1 {
-            font-size: 2em;
-            margin-bottom: 0.2em;
-        }
+<p style="text-align: center; color: #3498db; font-size: 1.1em;">
+  🔗 <a href="https://daniel0611CN.github.io" style="color: #3498db; text-decoration: none;">Visita la web en GitHub Pages</a> |
+  <a href="#" style="color: #3498db; text-decoration: none;">Visítala en Vercel</a>
+</p>
 
-        h2 {
-            font-size: 1.5em;
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-        }
+## Acerca de Cedago
+<div style="background-color: #ecf0f1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+  <p style="font-size: 1em; color: #555; line-height: 1.6;">
+    Cedago es una página web desarrollada como parte del primer curso del Grado Superior en Desarrollo de Aplicaciones Web, dentro de la materia de Lenguaje de Marcas. Está orientada a ofrecer servicios de ciberseguridad y fue creada desde cero utilizando HTML, CSS y JavaScript.
+  </p>
+</div>
 
-        p, li {
-            font-size: 1em;
-            margin: 0.5em 0;
-            color: #555;
-        }
+## Contenido del Repositorio
+<div style="background-color: #ecf0f1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+  <ul style="padding-left: 20px; color: #555; font-size: 1em;">
+    <li><strong>index.html</strong>: Contiene la estructura principal de la página de inicio.</li>
+    <li><strong>Carpeta HTML</strong>: Incluye el resto de las páginas del sitio web.</li>
+    <li><strong>Carpeta CSS</strong>: Contiene todas las hojas de estilo.</li>
+    <li><strong>Carpeta JS</strong>: Contiene scripts para mejoras estéticas y funcionales de la web.</li>
+    <li><strong>Carpeta images</strong>: Almacena la mayoría de las imágenes en formato webp.</li>
+  </ul>
+</div>
 
-        a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
+## Funcionalidades Adicionales
+<div style="background-color: #ecf0f1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+  <p style="font-size: 1em; color: #555; line-height: 1.6;">
+    Cedago incluye una página de registro e inicio de sesión para usuarios, con validación de nombre, correo electrónico y contraseña. Además, permite ver la contraseña al hacer clic en el icono correspondiente. Tras iniciar sesión, se da la bienvenida al usuario en una página dedicada (<strong>inicio.html</strong>), que replica el contenido principal e incluye un saludo personalizado.
+  </p>
+</div>
 
-        a:hover {
-            color: #2980b9;
-        }
+---
 
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .section {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #ecf0f1;
-            border-radius: 5px;
-        }
-
-        .section-title {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-
-        .contact {
-            font-style: italic;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Cedago - Página de Ciberseguridad</h1>
-        <p><strong>Autor:</strong> Daniel Clavijo Núñez</p>
-        <p><strong>Enlace a la web:</strong> <a href="https://daniel0611CN.github.io">https://daniel0611CN.github.io</a> | <a href="#">Visita en Vercel</a></p>
-
-        <div class="section">
-            <h2 class="section-title">Acerca de Cedago</h2>
-            <p>
-                Cedago es una página web desarrollada como parte del primer curso del Grado Superior en Desarrollo de Aplicaciones Web, en la materia de Lenguaje de Marcas. Esta plataforma está orientada a ofrecer servicios de ciberseguridad y ha sido creada desde cero utilizando HTML, CSS y JavaScript.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Contenido del Repositorio</h2>
-            <ul>
-                <li><strong>index.html</strong>: Contiene la estructura principal de la página de inicio.</li>
-                <li><strong>Carpeta HTML</strong>: Incluye el resto de las páginas del sitio web.</li>
-                <li><strong>Carpeta CSS</strong>: Contiene todas las hojas de estilo.</li>
-                <li><strong>Carpeta JS</strong>: Contiene scripts para mejoras estéticas y funcionalidades de la web.</li>
-                <li><strong>Carpeta images</strong>: Almacena la mayoría de las imágenes en formato webp.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Funcionalidades Adicionales</h2>
-            <p>
-                Cedago incluye una página de registro e inicio de sesión para usuarios, con validación de nombre, correo electrónico y contraseña. Esta función permite ver la contraseña al hacer clic en el icono correspondiente. Tras iniciar sesión, se da la bienvenida al usuario en una página dedicada (<strong>inicio.html</strong>), que replica el contenido principal e incluye un saludo personalizado.
-            </p>
-        </div>
-
-        <p class="contact">Para más información, puedes contactar a través del correo: <a href="mailto:daniclavijonunez@gmail.com">daniclavijonunez@gmail.com</a></p>
-    </div>
-</body>
-</html>
+<p style="text-align: center; font-size: 1em; font-style: italic; color: #555;">
+  📧 Para más información, puedes contactar a través del correo: <a href="mailto:daniclavijonunez@gmail.com" style="color: #3498db; text-decoration: none;">daniclavijonunez@gmail.com</a>
+</p>
